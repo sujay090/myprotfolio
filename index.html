@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full-Stack Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Cursor Trail -->
+    <div id="cursor-trail"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">Max</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">☰</div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home">
+      <div class="cyber-grid"></div>
+      <div class="home-content">
+        <div class="profile-photo">
+          <div class="holographic-overlay"></div>
+          <img src="./public/men2.jpg" alt="John Doe Profile Photo" />
+        </div>
+        <div class="hero-text">
+          <h1>
+            Hello, I'm <span class="highlight neon-charged">Sujay Pradhan</span>
+          </h1>
+          <p class="subtitle">
+            Crafting <span class="highlight">Futuristic</span> Web Experiences
+          </p>
+          <a href="#projects" class="btn glow">Explore My Work</a>
+        </div>
+      </div>
+      <div class="neon-wave"></div>
+      <div class="floating-orbs">
+        <div class="orb"></div>
+        <div class="orb"></div>
+        <div class="orb"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-content-ready">
+          <div class="about-text">
+            <p>
+              👋 I'm Sujay, a passionate Full Stack Web Developer 💻 working
+              with MERN stack, JavaScript, and Tailwind ⚙️, building real-world
+              apps like exam portals 📚, design tools 🎨, and vendor systems 🧾—
+              always learning, exploring 3D dev 🧠, and solving problems with
+              clean UI ✨ and practical tools 🔧.
+            </p>
+
+            <p>
+              With expertise in both frontend and backend, I thrive on turning
+              ideas into reality.
+            </p>
+          </div>
+          <div class="about-links">
+            <div class="social-links" style="margin-top: 20px">
+              <a href="https://github.com/yourusername" target="_blank">
+                <img
+                  class="social-icon"
+                  src="./public/github.png"
+                  alt="GitHub"
+                />
+              </a>
+              <a href="https://linkedin.com/in/yourusername" target="_blank">
+                <img
+                  class="social-icon"
+                  src="./public/linkedin.png"
+                  alt="LinkedIn"
+                />
+              </a>
+              <a href="https://instagram.com/yourusername" target="_blank">
+                <img class="social-icon" src="./public/instagram.png" />
+              </a>
+              <a href="https://facebook.com/yourusername" target="_blank">
+                <img
+                  class="social-icon"
+                  src="./public/facebook.png"
+                  alt="Facebook"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-decor">
+          <img class="about-decor" src="./public/max.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+      <h2>Skills</h2>
+      <div class="skills-overlay"></div>
+      <div class="skills-grid">
+        <div class="skill-card" data-tilt>
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="circuit-border"></div>
+              <img
+                src="public/c-plus-plus.png"
+                alt="MongoDB 3D"
+                class="skill-img"
+              />
+              <span>MongoDB</span>
+              <div class="progress-bar">
+                <div class="progress" style="--progress: 65%"></div>
+              </div>
+            </div>
+            <div class="card-back">
+              <p>NoSQL database management for flexible, scalable data.</p>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card" data-tilt>
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="circuit-border"></div>
+              <img src="public/python.png" alt="MongoDB 3D" class="skill-img" />
+              <span>MongoDB</span>
+              <div class="progress-bar">
+                <div class="progress" style="--progress: 65%"></div>
+              </div>
+            </div>
+            <div class="card-back">
+              <p>NoSQL database management for flexible, scalable data.</p>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card" data-tilt>
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="circuit-border"></div>
+              <img src="./public/html.png" alt="HTML5 3D" class="skill-img" />
+              <span>HTML5</span>
+              <div class="progress-bar">
+                <div class="progress" style="--progress: 90%"></div>
+              </div>
+            </div>
+            <div class="card-back">
+              <p>
+                Semantic markup & accessibility expertise for modern web
+                standards.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card" data-tilt>
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="circuit-border"></div>
+              <img src="./public/css.png" alt="CSS3 3D" class="skill-img" />
+              <span>CSS3</span>
+              <div class="progress-bar">
+                <div class="progress" style="--progress: 85%"></div>
+              </div>
+            </div>
+            <div class="card-back">
+              <p>
+                Advanced layouts, animations, and responsive design mastery.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card" data-tilt>
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="circuit-border"></div>
+              <img
+                src="./public/javascript.png"
+                alt="JavaScript 3D"
+                class="skill-img"
+              />
+              <span>JavaScript</span>
+              <div class="progress-bar">
+                <div class="progress" style="--progress: 80%"></div>
+              </div>
+            </div>
+            <div class="card-back">
+              <p>Dynamic, interactive UIs with clean, efficient code.</p>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card" data-tilt>
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="circuit-border"></div>
+              <img src="./public/react.png" alt="React 3D" class="skill-img" />
+              <span>React</span>
+              <div class="progress-bar">
+                <div class="progress" style="--progress: 75%"></div>
+              </div>
+            </div>
+            <div class="card-back">
+              <p>Component-based development for scalable frontends.</p>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card" data-tilt>
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="circuit-border"></div>
+              <img
+                src="./public/nodejs.png"
+                alt="Node.js 3D"
+                class="skill-img"
+              />
+              <span>Node.js</span>
+              <div class="progress-bar">
+                <div class="progress" style="--progress: 70%"></div>
+              </div>
+            </div>
+            <div class="card-back">
+              <p>
+                Server-side logic and API development with performance in mind.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card" data-tilt>
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="circuit-border"></div>
+              <img
+                src="public/mongo-db.png"
+                alt="MongoDB 3D"
+                class="skill-img"
+              />
+              <span>MongoDB</span>
+              <div class="progress-bar">
+                <div class="progress" style="--progress: 65%"></div>
+              </div>
+            </div>
+            <div class="card-back">
+              <p>NoSQL database management for flexible, scalable data.</p>
+            </div>
+          </div>
+        </div>
+        <div class="skill-card" data-tilt>
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="circuit-border"></div>
+              <img src="./public/git.png" alt="MongoDB 3D" class="skill-img" />
+              <span>MongoDB</span>
+              <div class="progress-bar">
+                <div class="progress" style="--progress: 65%"></div>
+              </div>
+            </div>
+            <div class="card-back">
+              <p>NoSQL database management for flexible, scalable data.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+      <h2>Projects</h2>
+      <div class="matrix-rain"></div>
+      <div class="projects-grid">
+        <div class="proj-card" data-tilt>
+          <div class="proj-inner">
+            <div class="proj-front">
+              <div class="holo-overlay"></div>
+              <div class="circuit-border"></div>
+              <div class="scanline"></div>
+              <h3>Exam Portal</h3>
+              <p>
+                An online platform for conducting exams with real-time scoring.
+              </p>
+              <img src="public/css.png" alt="Exam Portal" class="proj-img" />
+            </div>
+            <div class="proj-back">
+              <div class="data-flux"></div>
+              <p>
+                Built with MERN stack. Features user authentication, timer, and
+                auto-grading.
+              </p>
+              <a
+                href="https://github.com/yourusername/exam-portal"
+                target="_blank"
+                class="btn glow"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="proj-card" data-tilt>
+          <div class="proj-inner">
+            <div class="proj-front">
+              <div class="holo-overlay"></div>
+              <div class="circuit-border"></div>
+              <div class="scanline"></div>
+              <h3>Design Tool</h3>
+              <p>
+                A web-based tool for creating custom UI designs with
+                drag-and-drop.
+              </p>
+              <img
+                src="public/c-plus-plus.png"
+                alt="Design Tool"
+                class="proj-img"
+              />
+            </div>
+            <div class="proj-back">
+              <div class="data-flux"></div>
+              <p>
+                Uses React and Tailwind. Supports real-time previews and
+                exportable code.
+              </p>
+              <a
+                href="https://github.com/yourusername/design-tool"
+                target="_blank"
+                class="btn glow"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="proj-card" data-tilt>
+          <div class="proj-inner">
+            <div class="proj-front">
+              <div class="holo-overlay"></div>
+              <div class="circuit-border"></div>
+              <div class="scanline"></div>
+              <h3>Vendor System</h3>
+              <p>
+                A management system for vendors to track orders and payments.
+              </p>
+              <img
+                src="public/c-plus-plus.png"
+                alt="Vendor System"
+                class="proj-img"
+              />
+            </div>
+            <div class="proj-back">
+              <div class="data-flux"></div>
+              <p>MERN-based with secure APIs and dashboard analytics.</p>
+              <a
+                href="https://github.com/yourusername/vendor-system"
+                target="_blank"
+                class="btn glow"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form" class="glass">
+        <div class="input-wrapper">
+          <input
+            type="text"
+            placeholder="Your Name"
+            required
+            aria-label="Name"
+          />
+          <span class="underline"></span>
+        </div>
+        <div class="input-wrapper">
+          <input
+            type="email"
+            placeholder="Your Email"
+            required
+            aria-label="Email"
+          />
+          <span class="underline"></span>
+        </div>
+        <div class="input-wrapper">
+          <textarea
+            placeholder="Your Message"
+            required
+            aria-label="Message"
+          ></textarea>
+          <span class="underline"></span>
+        </div>
+        <button type="submit" class="btn glow holographic">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-divider"></div>
+      <div class="social-links">
+        <a href="#" class="social-icon" aria-label="GitHub"
+          ><svg viewBox="0 0 24 24">
+            <path
+              fill="#00ff88"
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+            /></svg
+        ></a>
+        <a href="#" class="social-icon" aria-label="LinkedIn"
+          ><svg viewBox="0 0 24 24">
+            <path
+              fill="#00ff88"
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+            /></svg
+        ></a>
+        <a href="#" class="social-icon" aria-label="Twitter"
+          ><svg viewBox="0 0 24 24">
+            <path
+              fill="#00ff88"
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+            /></svg
+        ></a>
+      </div>
+      <p>© 2025 John Doe. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
