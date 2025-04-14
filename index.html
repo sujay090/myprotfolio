@@ -2,13 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta
+      name="description"
+      content="Sujay Pradhan - Full Stack Developer Portfolio"
+    />
     <title>Full-Stack Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <!-- Particles Background -->
@@ -117,171 +130,99 @@
       <h2>Skills</h2>
       <div class="skills-overlay"></div>
       <div class="skills-grid">
-        <div class="skill-card" data-tilt>
-          <div class="card-inner">
-            <div class="card-front">
-              <div class="circuit-border"></div>
-              <img
-                src="public/c-plus-plus.png"
-                alt="MongoDB 3D"
-                class="skill-img"
-              />
-              <span>C++</span>
-              <div class="progress-bar">
-                <div class="progress" style="--progress: 65%"></div>
-              </div>
-            </div>
-            <div class="card-back">
-              <p>
-                Efficient programming with object-oriented and low-level
-                features.
-              </p>
-            </div>
+        <div class="skill-card">
+          <img src="public/c-plus-plus.png" alt="C++" class="skill-img" />
+          <span>C++</span>
+          <div class="progress-container">
+            <div class="progress-bar" style="width: 65%"></div>
           </div>
+          <p class="skill-description">
+            Efficient programming with object-oriented and low-level features.
+          </p>
         </div>
-        <div class="skill-card" data-tilt>
-          <div class="card-inner">
-            <div class="card-front">
-              <div class="circuit-border"></div>
-              <img src="public/python.png" alt="MongoDB 3D" class="skill-img" />
-              <span>Python</span>
-              <div class="progress-bar">
-                <div class="progress" style="--progress: 65%"></div>
-              </div>
-            </div>
-            <div class="card-back">
-              <p>
-                Versatile programming for data analysis, AI, and web
-                development.
-              </p>
-            </div>
+        <div class="skill-card">
+          <img src="public/python.png" alt="Python" class="skill-img" />
+          <span>Python</span>
+          <div class="progress-container">
+            <div class="progress-bar" style="width: 65%"></div>
           </div>
+          <p class="skill-description">
+            Versatile programming for data analysis, AI, and web development.
+          </p>
         </div>
-        <div class="skill-card" data-tilt>
-          <div class="card-inner">
-            <div class="card-front">
-              <div class="circuit-border"></div>
-              <img src="./public/html.png" alt="HTML5 3D" class="skill-img" />
-              <span>HTML5</span>
-              <div class="progress-bar">
-                <div class="progress" style="--progress: 90%"></div>
-              </div>
-            </div>
-            <div class="card-back">
-              <p>
-                Semantic markup & accessibility expertise for modern web
-                standards.
-              </p>
-            </div>
+        <div class="skill-card">
+          <img src="./public/html.png" alt="HTML5" class="skill-img" />
+          <span>HTML5</span>
+          <div class="progress-container">
+            <div class="progress-bar" style="width: 90%"></div>
           </div>
+          <p class="skill-description">
+            Semantic markup & accessibility expertise for modern web standards.
+          </p>
         </div>
-        <div class="skill-card" data-tilt>
-          <div class="card-inner">
-            <div class="card-front">
-              <div class="circuit-border"></div>
-              <img src="./public/css.png" alt="CSS3 3D" class="skill-img" />
-              <span>CSS3</span>
-              <div class="progress-bar">
-                <div class="progress" style="--progress: 85%"></div>
-              </div>
-            </div>
-            <div class="card-back">
-              <p>
-                Advanced layouts, animations, and responsive design mastery.
-              </p>
-            </div>
+        <div class="skill-card">
+          <img src="./public/css.png" alt="CSS3" class="skill-img" />
+          <span>CSS3</span>
+          <div class="progress-container">
+            <div class="progress-bar" style="width: 85%"></div>
           </div>
+          <p class="skill-description">
+            Advanced layouts, animations, and responsive design mastery.
+          </p>
         </div>
-        <div class="skill-card" data-tilt>
-          <div class="card-inner">
-            <div class="card-front">
-              <div class="circuit-border"></div>
-              <img
-                src="./public/javascript.png"
-                alt="JavaScript 3D"
-                class="skill-img"
-              />
-              <span>JavaScript</span>
-              <div class="progress-bar">
-                <div class="progress" style="--progress: 80%"></div>
-              </div>
-            </div>
-            <div class="card-back">
-              <p>Dynamic, interactive UIs with clean, efficient code.</p>
-            </div>
+        <div class="skill-card">
+          <img
+            src="./public/javascript.png"
+            alt="JavaScript"
+            class="skill-img"
+          />
+          <span>JavaScript</span>
+          <div class="progress-container">
+            <div class="progress-bar" style="width: 80%"></div>
           </div>
+          <p class="skill-description">
+            Dynamic, interactive UIs with clean, efficient code.
+          </p>
         </div>
-        <div class="skill-card" data-tilt>
-          <div class="card-inner">
-            <div class="card-front">
-              <div class="circuit-border"></div>
-              <img src="./public/react.png" alt="React 3D" class="skill-img" />
-              <span>React</span>
-              <div class="progress-bar">
-                <div class="progress" style="--progress: 75%"></div>
-              </div>
-            </div>
-            <div class="card-back">
-              <p>Component-based development for scalable frontends.</p>
-            </div>
+        <div class="skill-card">
+          <img src="./public/react.png" alt="React" class="skill-img" />
+          <span>React</span>
+          <div class="progress-container">
+            <div class="progress-bar" style="width: 75%"></div>
           </div>
+          <p class="skill-description">
+            Component-based development for scalable frontends.
+          </p>
         </div>
-        <div class="skill-card" data-tilt>
-          <div class="card-inner">
-            <div class="card-front">
-              <div class="circuit-border"></div>
-              <img
-                src="./public/nodejs.png"
-                alt="Node.js 3D"
-                class="skill-img"
-              />
-              <span>Node.js</span>
-              <div class="progress-bar">
-                <div class="progress" style="--progress: 70%"></div>
-              </div>
-            </div>
-            <div class="card-back">
-              <p>
-                Server-side logic and API development with performance in mind.
-              </p>
-            </div>
+        <div class="skill-card">
+          <img src="./public/nodejs.png" alt="Node.js" class="skill-img" />
+          <span>Node.js</span>
+          <div class="progress-container">
+            <div class="progress-bar" style="width: 70%"></div>
           </div>
+          <p class="skill-description">
+            Server-side logic and API development with performance in mind.
+          </p>
         </div>
-        <div class="skill-card" data-tilt>
-          <div class="card-inner">
-            <div class="card-front">
-              <div class="circuit-border"></div>
-              <img
-                src="public/mongo-db.png"
-                alt="MongoDB 3D"
-                class="skill-img"
-              />
-              <span>MongoDB</span>
-              <div class="progress-bar">
-                <div class="progress" style="--progress: 65%"></div>
-              </div>
-            </div>
-            <div class="card-back">
-              <p>NoSQL database management for flexible, scalable data.</p>
-            </div>
+        <div class="skill-card">
+          <img src="public/mongo-db.png" alt="MongoDB" class="skill-img" />
+          <span>MongoDB</span>
+          <div class="progress-container">
+            <div class="progress-bar" style="width: 65%"></div>
           </div>
+          <p class="skill-description">
+            NoSQL database management for flexible, scalable data.
+          </p>
         </div>
-        <div class="skill-card" data-tilt>
-          <div class="card-inner">
-            <div class="card-front">
-              <div class="circuit-border"></div>
-              <img src="./public/git.png" alt="MongoDB 3D" class="skill-img" />
-              <span>Git</span>
-              <div class="progress-bar">
-                <div class="progress" style="--progress: 65%"></div>
-              </div>
-            </div>
-            <div class="card-back">
-              <p>
-                Version control for collaborative and efficient code management.
-              </p>
-            </div>
+        <div class="skill-card">
+          <img src="./public/git.png" alt="Git" class="skill-img" />
+          <span>Git</span>
+          <div class="progress-container">
+            <div class="progress-bar" style="width: 65%"></div>
           </div>
+          <p class="skill-description">
+            Version control for collaborative and efficient code management.
+          </p>
         </div>
       </div>
     </section>
@@ -291,52 +232,99 @@
       <h2>Projects</h2>
       <div class="matrix-rain"></div>
       <div class="projects-grid">
-        <!-- From Uiverse.io by htwarriors108 -->
-        <a
-          class="pro-link"
-          href="https://github.com/sujay090/fullstack_vendor_12"
-          target="_blank"
-        >
-          <div class="card">
-            <span></span>
-            <div class="content">
-              <div class="pro-content">
-                <img src="public/admin.png" width="300px" alt="" />
-                <p>Vendor Management System</p>
-              </div>
+        <div class="project-card">
+          <img
+            src="public/admin.png"
+            alt="Vendor Management System"
+            class="project-image"
+          />
+          <div class="project-content">
+            <h3 class="project-title">Vendor Management System</h3>
+            <p class="project-description">
+              A comprehensive system for managing vendors, orders, and inventory
+              with real-time updates and analytics.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Express</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/sujay090/fullstack_vendor_12"
+                target="_blank"
+                class="project-link"
+              >
+                <i>🔗</i> View Code
+              </a>
+              <a href="#" target="_blank" class="project-link">
+                <i>🌐</i> Live Demo
+              </a>
             </div>
           </div>
-        </a>
-        <a
-          class="pro-link"
-          href="https://note-app-by-max.netlify.app/"
-          target="_blank"
-        >
-          <div class="card">
-            <span></span>
-            <div class="content">
-              <div class="pro-content">
-                <img src="public/note.png" width="300px" alt="" />
-                <p>Note take app</p>
-              </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="public/note.png"
+            alt="Note Taking App"
+            class="project-image"
+          />
+          <div class="project-content">
+            <h3 class="project-title">Note Taking App</h3>
+            <p class="project-description">
+              A modern note-taking application with rich text editing, cloud
+              sync, and organizational features.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Material UI</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" class="project-link">
+                <i>🔗</i> View Code
+              </a>
+              <a
+                href="https://note-app-by-max.netlify.app/"
+                target="_blank"
+                class="project-link"
+              >
+                <i>🌐</i> Live Demo
+              </a>
             </div>
           </div>
-        </a>
-        <a
-          class="pro-link"
-          href="https://max-quize.netlify.app/"
-          target="_blank"
-        >
-          <div class="card">
-            <span></span>
-            <div class="content">
-              <div class="pro-content">
-                <img src="public/quize.png" width="300px" alt="" />
-                <p>Quiz App</p>
-              </div>
+        </div>
+
+        <div class="project-card">
+          <img src="public/quize.png" alt="Quiz App" class="project-image" />
+          <div class="project-content">
+            <h3 class="project-title">Quiz App</h3>
+            <p class="project-description">
+              An interactive quiz application with multiple categories, scoring
+              system, and real-time feedback.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" class="project-link">
+                <i>🔗</i> View Code
+              </a>
+              <a
+                href="https://max-quize.netlify.app/"
+                target="_blank"
+                class="project-link"
+              >
+                <i>🌐</i> Live Demo
+              </a>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </section>
 
